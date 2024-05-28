@@ -9,47 +9,51 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{68
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{470296DF-142C-44C7-9F96-4EC76162AB9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.ApiGateway", "ApiGateways\Ocelot.ApiGateway\Ocelot.ApiGateway.csproj", "{8CA34A74-DFF1-4E39-B9B6-5449AA16BFA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.ApiGateway", "ApiGateways\Ocelot.ApiGateway\Ocelot.ApiGateway.csproj", "{8CA34A74-DFF1-4E39-B9B6-5449AA16BFA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{4847B16A-A961-4FBB-A3F3-60D1B32AEA19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Api", "Services\Account\Account.Api\Account.Api.csproj", "{61988CA6-7146-4A82-BE20-48C60CE753BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Api", "Services\Account\Account.Api\Account.Api.csproj", "{61988CA6-7146-4A82-BE20-48C60CE753BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Test", "Services\Account\Account.Test\Account.Test.csproj", "{5F4CA552-79E0-4722-8A8D-302C781C0813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Test", "Services\Account\Account.Test\Account.Test.csproj", "{5F4CA552-79E0-4722-8A8D-302C781C0813}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Core", "Services\Account\Account.Core\Account.Core.csproj", "{3FF973C5-8E0A-4295-8F46-0805E22F9A96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Core", "Services\Account\Account.Core\Account.Core.csproj", "{3FF973C5-8E0A-4295-8F46-0805E22F9A96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Application", "Services\Account\Account.Application\Account.Application.csproj", "{18D31476-3078-4B8A-882F-571A27716276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Application", "Services\Account\Account.Application\Account.Application.csproj", "{18D31476-3078-4B8A-882F-571A27716276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Infrastructure", "Services\Account\Account.Infrastructure\Account.Infrastructure.csproj", "{8D83A55B-6B20-4312-A561-009F09CC0EBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Infrastructure", "Services\Account\Account.Infrastructure\Account.Infrastructure.csproj", "{8D83A55B-6B20-4312-A561-009F09CC0EBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Infrastructure", "Infrastructure\Logging.Infrastructure\Logging.Infrastructure.csproj", "{5FE3179A-30FD-4E00-B68A-FB4825856A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging.Infrastructure", "Infrastructure\Logging.Infrastructure\Logging.Infrastructure.csproj", "{5FE3179A-30FD-4E00-B68A-FB4825856A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper.Infrastructure", "Infrastructure\Helper.Infrastructure\Helper.Infrastructure.csproj", "{A1ABB30A-9021-41A9-924F-39293EF7454A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper.Infrastructure", "Infrastructure\Helper.Infrastructure\Helper.Infrastructure.csproj", "{A1ABB30A-9021-41A9-924F-39293EF7454A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{EE2037C2-E7CE-4E13-8CF1-C048790BAA8D}"
 	ProjectSection(SolutionItems) = preProject
-		dummy-data.sql = dummy-data.sql
-		howto.txt = howto.txt
-		readme.txt = readme.txt
-		script.sql = script.sql
+		Documentation\dummy-data.sql = Documentation\dummy-data.sql
+		Documentation\howto.txt = Documentation\howto.txt
+		Documentation\readme.txt = Documentation\readme.txt
+		Documentation\script.sql = Documentation\script.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailing.Infrastructure", "Infrastructure\Mailing.Infrastructure\Mailing.Infrastructure.csproj", "{CE8BF8F6-B84E-44C6-9FAD-CF62B900290E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mailing.Infrastructure", "Infrastructure\Mailing.Infrastructure\Mailing.Infrastructure.csproj", "{CE8BF8F6-B84E-44C6-9FAD-CF62B900290E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfGenerator.Infrastructure", "Infrastructure\PdfGenerator.Infrastructure\PdfGenerator.Infrastructure.csproj", "{FFCED02F-7EF5-48FA-A1CB-FE7485698D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfGenerator.Infrastructure", "Infrastructure\PdfGenerator.Infrastructure\PdfGenerator.Infrastructure.csproj", "{FFCED02F-7EF5-48FA-A1CB-FE7485698D80}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{5D3C7F7C-9914-418A-A010-CBAB74614A99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Test", "Services\Auth\Auth.Test\Auth.Test.csproj", "{03230484-CC5D-4AD0-99CB-81A4760E040F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.Test", "Services\Auth\Auth.Test\Auth.Test.csproj", "{03230484-CC5D-4AD0-99CB-81A4760E040F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Infrastructure", "Services\Auth\Auth.Infrastructure\Auth.Infrastructure.csproj", "{ADC21872-3895-49E3-AE72-78DF9CC3BBA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.Infrastructure", "Services\Auth\Auth.Infrastructure\Auth.Infrastructure.csproj", "{ADC21872-3895-49E3-AE72-78DF9CC3BBA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Core", "Services\Auth\Auth.Core\Auth.Core.csproj", "{33E636C1-26A2-4CA4-B159-37824B8DA62B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.Core", "Services\Auth\Auth.Core\Auth.Core.csproj", "{33E636C1-26A2-4CA4-B159-37824B8DA62B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Application", "Services\Auth\Auth.Application\Auth.Application.csproj", "{16D041BB-0477-4A48-BB94-B6B99B136963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.Application", "Services\Auth\Auth.Application\Auth.Application.csproj", "{16D041BB-0477-4A48-BB94-B6B99B136963}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Api", "Services\Auth\Auth.Api\Auth.Api.csproj", "{3BEC8D05-A41E-47D8-B1B1-3712EC64D6DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.Api", "Services\Auth\Auth.Api\Auth.Api.csproj", "{3BEC8D05-A41E-47D8-B1B1-3712EC64D6DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.Messaging.Send", "Services\Auth\Auth.Messaging.Send\Auth.Messaging.Send.csproj", "{1592D675-F26C-401D-A697-7A086CD615BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Messaging.Receive", "Services\Account\Account.Messaging.Receive\Account.Messaging.Receive.csproj", "{B0C2B7FB-1790-46D7-8599-2DF2059308B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +121,14 @@ Global
 		{3BEC8D05-A41E-47D8-B1B1-3712EC64D6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BEC8D05-A41E-47D8-B1B1-3712EC64D6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BEC8D05-A41E-47D8-B1B1-3712EC64D6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1592D675-F26C-401D-A697-7A086CD615BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1592D675-F26C-401D-A697-7A086CD615BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1592D675-F26C-401D-A697-7A086CD615BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1592D675-F26C-401D-A697-7A086CD615BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C2B7FB-1790-46D7-8599-2DF2059308B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C2B7FB-1790-46D7-8599-2DF2059308B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C2B7FB-1790-46D7-8599-2DF2059308B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C2B7FB-1790-46D7-8599-2DF2059308B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +151,8 @@ Global
 		{33E636C1-26A2-4CA4-B159-37824B8DA62B} = {5D3C7F7C-9914-418A-A010-CBAB74614A99}
 		{16D041BB-0477-4A48-BB94-B6B99B136963} = {5D3C7F7C-9914-418A-A010-CBAB74614A99}
 		{3BEC8D05-A41E-47D8-B1B1-3712EC64D6DA} = {5D3C7F7C-9914-418A-A010-CBAB74614A99}
+		{1592D675-F26C-401D-A697-7A086CD615BF} = {5D3C7F7C-9914-418A-A010-CBAB74614A99}
+		{B0C2B7FB-1790-46D7-8599-2DF2059308B0} = {4847B16A-A961-4FBB-A3F3-60D1B32AEA19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0DD25CC-4D27-44CA-A345-4F847A0CD78F}
