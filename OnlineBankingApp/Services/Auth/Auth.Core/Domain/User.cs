@@ -15,32 +15,32 @@ namespace Auth.Core.Domain
         [Required]
         [MaxLength(30)]
         [MinLength(1)]
-        public string FirstName { get; set; }
+        public required string FirstName { get; set; }
 
         //Kayakıran
         [Required]
         [MaxLength(30)]
         [MinLength(1)]
-        public string LastName { get; set; }
+        public required string LastName { get; set; }
 
         //TC kimlik no
         [Required]
         [MaxLength(11)]
         [MinLength(11)]
-        public string IdentityNumber { get; set; }
+        public required string IdentityNumber { get; set; }
 
         //Salt + Hash
         [Required]
         [MaxLength(250)]
-        public string Password { get; set; }
+        public required string Password { get; set; }
 
         //Token
         [Required]
-        public string Token { get; set; }
+        public required string Token { get; set; }
 
         //RefreshToken
         [Required]
-        public string RefreshToken { get; set; }
+        public required string RefreshToken { get; set; }
 
         [Required]
         public DateTime Created { get; set; } = DateTime.Now;

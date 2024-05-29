@@ -27,6 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\Infrastructure\Common.Infrastructure\Common.Infrastructure.csproj" />
 		<ProjectReference Include="..\Auth.Application\Auth.Application.csproj" />
 		<ProjectReference Include="..\Auth.Infrastructure\Auth.Infrastructure.csproj" />
 		<ProjectReference Include="..\Auth.Messaging.Send\Auth.Messaging.Send.csproj" />

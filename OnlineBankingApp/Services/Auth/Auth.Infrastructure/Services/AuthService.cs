@@ -31,7 +31,7 @@ namespace Auth.Infrastructure.Services
 
         public async Task<LoginResponseDto> LoginAsync(LoginRequestDto request, CancellationToken cancellationToken)
         {
-            if (!StringHelper.Validator(request.IdentityNumber, 11, 11) || !StringHelper.Validator(request.Password, 1, 30))
+            if (!request.IdentityNumber.Validator(11, 11) || !request.Password.Validator(1, 30))
             {
                 _loggingService.Information("Giriş alanlarını kontrol ediniz", request);
                 return LoginResponseDto.ValidateError("Giriş alanlarını kontrol ediniz");

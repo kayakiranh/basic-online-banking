@@ -1,5 +1,6 @@
 ﻿using Auth.Application.DataTransferObjects;
 using Auth.Application.Interfaces;
+using Common.Infrastructure.DataTransferObjects;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Polly;
@@ -19,23 +20,23 @@ namespace Auth.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<LoginResponseDto>> Login([FromBody] LoginRequestDto model, CancellationToken cancellationToken)
+        public async Task<ActionResult<ResponseDto>> Login([FromBody] LoginRequestDto model, CancellationToken cancellationToken)
         {
-            var response = Policy.HandleResult<LoginResponseDto>(x => !x.Result)
-            .WaitAndRetryAsync(2, _ => TimeSpan.FromSeconds(30), (_, timeSpan, retryCount, context) => Console.WriteLine($"Retry : {retryCount}, Waiting : {timeSpan} "))
+            Task<LoginResponseDto> response = Policy.HandleResult<LoginResponseDto>(x => !x.Result)
+            .WaitAndRetryAsync(2, _ => TimeSpan.FromSeconds(30), (_, timeSpan, retryCount, _) => Console.WriteLine($"Retry : {retryCount}, Waiting : {timeSpan} "))
             .ExecuteAsync(async () => await _authService.LoginAsync(model, cancellationToken));
 
-            return response.Result;
+            return ResponseDto.Success(response, response.Result.Result, "İşlem yapılırken bir hata meydana geldi");
         }
 
         [HttpPost]
-        public async Task<ActionResult<RegisterResponseDto>> Register([FromBody] RegisterRequestDto model, CancellationToken cancellationToken)
+        public async Task<ActionResult<ResponseDto>> Register([FromBody] RegisterRequestDto model, CancellationToken cancellationToken)
         {
-            var response = Policy.HandleResult<RegisterResponseDto>(x => !x.Result)
-            .WaitAndRetryAsync(2, _ => TimeSpan.FromSeconds(30), (_, timeSpan, retryCount, context) => Console.WriteLine($"Retry : {retryCount}, Waiting : {timeSpan} "))
+            Task<RegisterResponseDto> response = Policy.HandleResult<RegisterResponseDto>(x => !x.Result)
+            .WaitAndRetryAsync(2, _ => TimeSpan.FromSeconds(30), (_, timeSpan, retryCount, _) => Console.WriteLine($"Retry : {retryCount}, Waiting : {timeSpan} "))
             .ExecuteAsync(async () => await _authService.RegisterAsync(model, cancellationToken));
 
-            return response.Result;
+            return ResponseDto.Success(response, response.Result.Result, "İşlem yapılırken bir hata meydana geldi");
         }
     }
 }
