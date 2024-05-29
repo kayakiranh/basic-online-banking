@@ -4,6 +4,7 @@ namespace Helper.Infrastructure
 {
     public static class StringHelper
     {
+        //string min/max and security validator
         public static bool Validator(this string value, int minLenght, int maxLenght)
         {
             if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))

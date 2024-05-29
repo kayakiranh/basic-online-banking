@@ -1,6 +1,6 @@
 ﻿namespace PdfGenerator.Infrastructure
 {
-    public interface IPdfGenerator
+    public interface IPdfService
     {
         string Generate(string accountNumber);
     }

@@ -3,7 +3,7 @@
 namespace PdfGenerator.Infrastructure
 {
     [Serializable]
-    public class PdfGenerator : IPdfGenerator
+    public class PdfService : IPdfService
     {
         public string Generate(string accountNumber)
         {
@@ -13,6 +13,8 @@ namespace PdfGenerator.Infrastructure
             accountTransactionHistory.Add(new Tuple<DateTime, string, decimal>(DateTime.Now.AddDays(0), "Maaş", 1000));
 
             string pdfContent = JsonSerializer.Serialize(accountTransactionHistory);
+
+            //business like ironpdf or epplus...
 
             return $"~/files/pdf/{accountNumber}/{DateTime.Now.Date}/{Guid.NewGuid().ToString()}.pdf";
         }
