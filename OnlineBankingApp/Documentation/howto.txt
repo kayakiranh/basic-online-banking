@@ -1,0 +1,11 @@
+Auth Api :
+
+enable-migrations
+add-migration "Init"
+update-database
+
+Account Api :
+
+enable-migrations
+add-migration "Init"
+update-database

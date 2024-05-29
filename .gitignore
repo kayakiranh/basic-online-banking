@@ -39,3 +39,4 @@ OnlineBankingApp/.vs/OnlineBankingApp/FileContentIndex/0ee05dd5-059e-4e41-9fa8-7
 /OnlineBankingApp/Services/Auth/Auth.Messaging.Send/bin
 /OnlineBankingApp/Services/Account/Account.Messaging.Receive/obj
 /OnlineBankingApp/Infrastructure/Common.Infrastructure/bin
+/OnlineBankingApp/Infrastructure/Common.Infrastructure/obj
