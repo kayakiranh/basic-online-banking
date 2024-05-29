@@ -1,0 +1,94 @@
+{
+  "Routes": [
+    //accounts api start
+    {
+      "DownstreamPathTemplate": "/api/v1/accounts",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5094
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/accounts",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/deposit",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5094
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deposit",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //withdraw v1
+    {
+      "DownstreamPathTemplate": "/api/v1/withdraw",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5094
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/withdraw",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //withdraw v2
+    {
+      "DownstreamPathTemplate": "/api/v2/withdraw",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5094
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v2/withdraw",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/balance",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5094
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/balance",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //accounts api finish
+    //auth api start
+    {
+      "DownstreamPathTemplate": "/api/auth/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5119
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5119
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/register",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+    //auth api finish
+  ]
+}
